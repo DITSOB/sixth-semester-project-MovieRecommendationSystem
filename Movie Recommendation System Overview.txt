@@ -1,0 +1,10 @@
+Movie Recommendation System Overview
+-------------------------------------------------------------
+
+1. TMDB dataset from Kaggle - 5000 data(credits and movies)
+2. Merged credits and movies dataset by title - 4809 data
+3. Created a dataset based on movie id, title, genres, overview, keywords, cast, crew 
+4. Pre-processed data(check null/duplicated data, format data into required form, remove blank space between data in         each column) - 4806 data
+5. Creating new column Tags which incorporates genres, overview, keywords, cast, crew in new_df
+6. Vectorizing data(CountVectorizer-max_feaures,stop_words, fit_transform to array, get_features_names_out, cosine_similarity)
+6 Using Streamlit lib to create a simple web app(python -m streamlit run src/app.py)
